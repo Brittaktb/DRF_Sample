@@ -38,7 +38,7 @@ class BlogPostListCreate(APIView):
 # Name the class according to the model its working with
 class TaskViewSet(ViewSet):
     
-    authentication_classes = [TokenAuthentication]
+    #authentication_classes = [TokenAuthentication]
     permission_classes = [IsAuthenticated]
     # Declare the queryset as a class attribute
     queryset = Task.objects.all()
